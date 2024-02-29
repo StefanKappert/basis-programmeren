@@ -1,0 +1,26 @@
+<?php
+
+
+$getal = rand(1, 100);
+
+
+$aantalbeurten = 0;
+
+
+do {
+
+    $random = readline("Raad het getal tussen 1 en 100: ");
+
+
+    $aantalbeurten++;
+
+
+    if ($random == $getal) {
+        echo "Gefeliciteerd! Je hebt het juiste getal geraden in $aantalbeurten beurten.\n";
+    } elseif ($random < $getal) {
+        echo "Verkeerd antwoord. Het juiste getal is hoger.\n";
+    } else {
+        echo "Verkeerd antwoord. Het juiste getal is lager.\n";
+    }
+
+} while ($random != $getal);

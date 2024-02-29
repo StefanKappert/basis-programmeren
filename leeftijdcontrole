@@ -1,0 +1,15 @@
+<?php
+
+$naam = readline("voer naam in:");
+$welkom = readline("welkom $naam");
+
+$leeftijd = readline("voer leeftijd in:");
+
+if($leeftijd <18){
+    echo "je mag geen alcohol kopen";
+}else{
+    echo "je mag alcohol kopen";
+}
+
+
+
